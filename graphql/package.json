@@ -1,0 +1,22 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "A Koa and GraphQl blog for react blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Gael G",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.18.2",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "graphql-tools": "^6.2.4",
+    "knex": "^0.21.6",
+    "koa": "^2.13.0",
+    "moment": "^2.29.1",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^2.2.5"
+  }
+}
