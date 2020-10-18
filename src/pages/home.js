@@ -29,7 +29,7 @@ const mergeStyles = function (posts, config) {
     posts.forEach((post, index) => {
         post.style = config[index]
         post.author = 'Gael G'
-        post.description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        post.description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...'
     })
 }
 
