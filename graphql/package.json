@@ -4,12 +4,15 @@
   "description": "A Koa and GraphQl blog for react blog",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "create-migration": "node ./database/actions/create-migration.js",
+    "run-migration": "node ./database/actions/run-migration.js"
   },
   "author": "Gael G",
   "license": "ISC",
   "dependencies": {
     "apollo-server-koa": "^2.18.2",
+    "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "graphql": "^15.3.0",
     "graphql-tools": "^6.2.4",

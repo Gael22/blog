@@ -5,28 +5,37 @@ import { Avatar } from 'antd'
 
 const navLinks = [
     {
-        title: 'Home',
+        title: 'Acceuil',
         path: '/'
     },
     {
-        title: 'Blog',
+        title: 'Sciences et Foi',
         path: '/blog'
     },
     {
-        title: 'Contact Us',
+        title: 'Actualites des Propheties',
         path: '/contact-us'
     },
     {
-        title: 'Login',
+        title: 'Chroniques du Reveil',
         path: '/login'
     },
+    {
+        title: 'Nos Ouvrages',
+        path: '/login'
+    },
+    {
+        title: 'Se Connecter',
+        path: '/login'
+    },
+    
 ]
 
 export default function Navigation ({user}) {
     const [menuActive, setMenuActive] = useState(false)
     return (
     <nav className="site-navigation">
-        <span className="menu-title">My BLog Name</span>
+        <span className="menu-title">LevitesEnChrist</span>
         <div className={`menu-content-container ${menuActive && 'active'}`}>
            <ul>
             { navLinks.map((link, index) =>(
@@ -36,10 +45,10 @@ export default function Navigation ({user}) {
             )) 
             }
            </ul>
-           <span className="menu-avatar-container">
+           {/* <span className="menu-avatar-container">
                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38}/>
                <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
-           </span>
+           </span> */}
         </div>
         < i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)}/>
     </nav>
